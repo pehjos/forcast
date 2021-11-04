@@ -16,7 +16,10 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
+app.get('/', (req, res) => {
+res.send('heello hookmall back is working')
 
+})
 // connection staring
 
 
